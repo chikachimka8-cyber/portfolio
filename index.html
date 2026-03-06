@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний Портфолио</title>
+    <meta name="description" content="Миний frontend хөгжүүлэгчийн портфолио вебсайт">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container nav-wrap">
+            <a href="#hero" class="brand">MyPortfolio</a>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Горим солих">
+                Цагаан горим
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#about">Тухай</a></li>
+                    <li><a href="#skills">Ур чадвар</a></li>
+                    <li><a href="#projects">Төслүүд</a></li>
+                    <li><a href="#contact">Холбоо</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<section id="login-section"> 
+    <h2>Админ нэвтрэх</h2>
+    <input type="password" id="admin-password" placeholder="Нууц үг"/>
+    <button id="login-button">Нэвтрэх</button>
+    <p id="login-error" style="color: red;"></p>
+</section>
+
+<section id="admin-panel">
+    <h2>Админ самбар</h2>
+    <button id="enable-edit-name">Засах горим</button> 
+    <button id="enable-edit-description">Хадгалах</button>
+</section> 
+    <main>
+        <section id="hero" class="section hero">
+            <div class="container hero-content">
+                <p class="eyebrow">Frontend Developer • UI Enthusiast</p>
+                <h1>Сайн байна уу, би таны дараагийн вэб төслийг амилуулах хүн.</h1>
+                <p class="lead">
+                    Цэвэр код, хүчтэй дизайн, сайн хэрэглэгчийн туршлага дээр төвлөрч
+                    орчин үеийн веб интерфэйс бүтээдэг.
+                </p>
+                <div class="actions">
+                    <a href="#projects" class="btn btn-primary">Төслүүд үзэх</a>
+                    <a href="#contact" class="btn btn-ghost">Холбогдох</a>
+                </div>
+                <ul class="stats">
+                    <li><span>12+</span> Дуусгасан ажил</li>
+                    <li><span>3+</span> Жилийн туршлага</li>
+                    <li><span>100%</span> Responsive дизайн</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container about-grid">
+                <div class="about-image-wrap">
+                    <img src="https://picsum.photos/700/800?random=11" alt="Профайл зураг" class="about-image">
+                </div>
+                <div class="about-copy">
+                    <h2>Миний тухай</h2>
+                    <p>
+                        Би frontend чиглэлээр ажилладаг бөгөөд хурдан, ойлгомжтой, хэрэглэгч төвтэй
+                        интерфэйс хийхийг зорьдог. HTML, CSS, JavaScript болон React дээр ажилладаг.
+                    </p>
+                    <p>
+                        Төслийн шаардлагыг бизнесийн зорилготой уялдуулж, дизайнаас код руу чанартай
+                        хөрвүүлэлт хийх нь миний гол давуу тал.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Миний ур чадвар</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>HTML5 + Semantic</h3>
+                        <p>SEO-д ээлтэй, зөв бүтэцтэй, уншигдахуйц markup бичнэ.</p>
+                    </article>
+                    <article class="card">
+                        <h3>CSS3 + Responsive</h3>
+                        <p>Grid/Flex ашиглаж бүх дэлгэц дээр тогтвортой layout гаргана.</p>
+                    </article>
+                    <article class="card">
+                        <h3>JavaScript</h3>
+                        <p>Интерактив хэсгийг цэвэр логиктой, ойлгомжтой кодоор хэрэгжүүлнэ.</p>
+                    </article>
+                    <article class="card">
+                        <h3>React</h3>
+                        <p>Компонент бүтэцтэй, дахин ашиглах боломжтой UI хөгжүүлнэ.</p>
+                    </article>
+                    <article class="card">
+                        <h3>UI/UX Thinking</h3>
+                        <p>Хэрэглэгчийн урсгал, харааны шатлал, хурдан ойлголтыг чухалчилна.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Performance</h3>
+                        <p>Lightweight бүтэц, зураг оновчлол, цэвэр stylesheet ашиглана.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Сонгосон төслүүд</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="https://picsum.photos/900/600?random=21" alt="E-commerce landing page төсөл">
+                        <div class="project-body">
+                            <h3>E-commerce Landing</h3>
+                            <p>Борлуулалтад чиглэсэн хурдан буудаг нэг хуудас интерфэйс.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="https://picsum.photos/900/600?random=22" alt="Dashboard UI төсөл">
+                        <div class="project-body">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Мэдээллийн харагдацыг сайжруулсан, ойлгомжтой admin самбар.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="https://picsum.photos/900/600?random=23" alt="Portfolio redesign төсөл">
+                        <div class="project-body">
+                            <h3>Portfolio Redesign</h3>
+                            <p>Хувийн брэндийг тодруулсан modern minimal концепц.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-wrap">
+                <h2>Холбоо барих</h2>
+                <p class="contact-subtitle">Таны төсөл дээр хамтран ажиллахад бэлэн байна.</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Таны нэр" required>
+                    <input type="email" placeholder="Имэйл хаяг" required>
+                    <textarea rows="5" placeholder="Төслийн товч мэдээлэл" required></textarea>
+                    <button type="submit">Мессеж илгээх</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-wrap">
+            <p>© 2026 MyPortfolio. Бүх эрх хуулиар хамгаалагдсан.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
